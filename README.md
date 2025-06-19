@@ -76,4 +76,50 @@
 ### 11.Verified PCI DSS rules and vulnerability detection
 ![Ubuntu 64-bit-2025-06-07-12-39-23](https://github.com/user-attachments/assets/da549567-7dcd-4fe1-92ec-5c32e6a61bdb)
 
+## To start or stop all Wazuh services at once (Manager + Agent + Dashboard + Filebeat/Elasticsearch if installed)
+
+###  ✅ Step 1: Create Script File
+#### **```nano manage_wazuh.sh```**
+###  ✅ Step 2: Paste the following content
+
+bash
+Action: start or stop
+ACTION=$1
+
+if [[ "$ACTION" != "start" && "$ACTION" != "stop" && "$ACTION" != "restart" ]]; then
+  echo "Usage: $0 {start|stop|restart}"
+  exit 1
+fi
+
+echo "Performing '$ACTION' on all Wazuh services..."
+
+Wazuh Manager
+sudo systemctl $ACTION wazuh-manager
+
+Wazuh Dashboard
+sudo systemctl $ACTION wazuh-dashboard
+
+Wazuh Agent (if running on same machine)
+sudo systemctl $ACTION wazuh-agent
+
+Filebeat (optional, if installed)
+sudo systemctl $ACTION filebeat
+
+Elasticsearch (optional)
+sudo systemctl $ACTION elasticsearch
+
+echo "All services have been $ACTIONed."``` 
+
+
+### ✅ Step 3: Make it Executable
+#### **```chmod +x manage_wazuh.sh```**
+
+### ✅ Step 4: Run the Script
+#### **```./manage_wazuh.sh start```**
+
+#### **```./manage_wazuh.sh stop```**
+
+#### **```./manage_wazuh.sh restart```**
+
+
 
