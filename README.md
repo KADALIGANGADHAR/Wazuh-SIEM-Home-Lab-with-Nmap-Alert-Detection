@@ -94,22 +94,26 @@ fi
 echo "Performing '$ACTION' on all Wazuh services..."
 
 Wazuh Manager
+
 sudo systemctl $ACTION wazuh-manager
 
 Wazuh Dashboard
+
 sudo systemctl $ACTION wazuh-dashboard
 
 Wazuh Agent (if running on same machine)
+
 sudo systemctl $ACTION wazuh-agent
 
 Filebeat (optional, if installed)
+
 sudo systemctl $ACTION filebeat
 
 Elasticsearch (optional)
+
 sudo systemctl $ACTION elasticsearch
 
-echo "All services have been $ACTIONed."``` 
-
+echo "All services have been $ACTIONed." 
 
 ### ✅ Step 3: Make it Executable
 #### **```chmod +x manage_wazuh.sh```**
