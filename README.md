@@ -1,13 +1,21 @@
 # Wazuh-SIEM-Home-Lab-with-Nmap-Alert-Detection  
-wazuh-siem-lab/
-├── README.md
-├── screenshots/
-│   ├── wazuh-install.png
-│   ├── nmap-scan.png
-│   ├── siem-alert.png
-│   └── dashboard.png
-├── setup/
-│   ├── wazuh-installation-guide.md
-│   └── nmap-test-steps.md
-└── results/
-    └── alert-summary.md
+
+## Objective
+
+### This project demonstrates the set up a Wazuh Security Information and Event Management (SIEM) system with a working agent and demonstrate alert generation and monitoring.
+
+## Tools Used
+- **Wazuh (Server & Dashboard)**
+ 
+- **Ubuntu (Wazuh server VM)**
+ 
+- **Kali Linux (Agent system in VM)**
+ 
+- **VMware**
+ 
+- **Nmap (for triggering alerts)**
+ 
+- **Elasticsearch, Kibana (comes with Wazuh)**
+  
+## ⚙️ Lab Setup
+
