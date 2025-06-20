@@ -82,7 +82,7 @@
 #### **```nano manage_wazuh.sh```**
 ###  ✅ Step 2: Paste the following content
 
-bash
+```bash
 Action: start or stop
 ACTION=$1
 
@@ -113,7 +113,7 @@ Elasticsearch (optional)
 
 sudo systemctl $ACTION elasticsearch
 
-echo "All services have been $ACTIONed." 
+echo "All services have been $ACTIONed." ```
 
 ### ✅ Step 3: Make it Executable
 #### **```chmod +x manage_wazuh.sh```**
