@@ -31,6 +31,7 @@
 #### Downloaded and executed the official Wazuh installation script to set up the Wazuh server,dashboard, and components.dashboard, and components.
 ![Ubuntu 64-bit-2025-06-06-22-05-04](https://github.com/user-attachments/assets/ce61b60f-1a6c-4104-80ce-83a98eefff32)
 #### ```curl -sO https://packages.wazuh.com/4.12/wazuh-install.sh```
+#### ```sudo bash wazuh-install.sh -a -o```
 ![Ubuntu 64-bit-2025-06-06-22-05-10](https://github.com/user-attachments/assets/d92f362a-8d69-4007-8f32-dc18c631a21c)
 ![Ubuntu 64-bit-2025-06-06-22-09-37](https://github.com/user-attachments/assets/eb6a3118-45be-45db-9312-171d6bb2a18f)
 ![Ubuntu 64-bit-2025-06-06-22-22-38](https://github.com/user-attachments/assets/ab2435b1-5fb6-4df8-8cf2-be971587d2a4)
