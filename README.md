@@ -1,4 +1,4 @@
-# Wazuh-SIEM-Home-Lab-with-Nmap-Alert-Detection  
+# Wazuh-SIEM-Home-Lab
 
 ## Objective
 
